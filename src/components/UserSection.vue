@@ -8,7 +8,7 @@
         <div class="card-container">
           <div class="addUser">
             <div id="user" class="text-sm m-8 ">
-              <h4 class="mb-4 font-light text-blue-700 text-md">Add New User</h4>
+              <h4 class="mb-4 font-light text-blue-700/50 text-md">Add New User</h4>
               <div class="title">
                 <label class="label" for="name">NAME:</label>
                 <input type="text" id="name" class="input" name="name" placeholder="name" v-model="nameData">
