@@ -20,7 +20,7 @@
         </div>
       </div>
     </div>
-    <UserSection :usersApi="usersApi" @newUser="usersApi.unshift($event)" />
+    <UserSection :usersApi="usersApi" @addUser="addUser($event)" />
   </div>
 </template>
 
@@ -28,7 +28,6 @@
 import UserSection from './components/UserSection.vue'
 import axios from 'axios'
 import './assets/tailwind.css'
-
 
 export default {
   name: 'App',
@@ -40,17 +39,28 @@ export default {
       usersApi: null,
     }
   },
+  //methods directive içerisinde kullanıcı ekleme ve get post işlemi yapıldı.
   methods: {
-    newUser(item) {
-      this.usersApi.unshift(item);
+    addUser: function(item) {
+        console.log(item)
+        axios.post("https://jsonplaceholder.typicode.com/users", item)
+          .then( (response) => {
+            this.usersApi.unshift(response.data);
+          })
+          .catch( (error) =>{
+            console.log(error);
+          })
+
     }
   },
   created: function () {
-    axios.get("https://jsonplaceholder.typicode.com/users").then((res) => {
-      this.usersApi = res.data;
-      console.log(this.usersApi)
-    })
-  }
+    axios.get("https://jsonplaceholder.typicode.com/users")
+      .then((res) => {
+        this.usersApi = res.data;
+        console.log(this.usersApi)
+      })
+  },
+
 }
 </script>
 

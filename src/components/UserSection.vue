@@ -18,7 +18,7 @@
 
         
         <div class="">
-          <button class="btn" @click="$emit('newUser', {name:nameData, phone:phoneData, email:emailData})"  >ADD</button>
+          <button class="btn" @click="$emit('addUser', {name:nameData, phone:phoneData, email:emailData})"  >ADD</button>
         </div>
       </div>
     </div>
