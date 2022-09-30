@@ -1,5 +1,5 @@
 <template>
-  <button id="show-modal" @click="showModal = true" class="btn-modal">ADD CUSTOMER</button>
+  <button id="show-modal" @click="showModal = true" class="btn-modal">ADD USER</button>
 
   <Teleport to="body">
     <!-- use the modal component, pass in the prop -->
@@ -8,7 +8,7 @@
         <div class="card-container">
           <div class="addUser">
             <div id="user" class="text-sm m-8 ">
-              <h4 class="mb-4">Add New Custumer</h4>
+              <h4 class="mb-4 font-light text-blue-700 text-md">Add New User</h4>
               <div class="title">
                 <label class="label" for="name">NAME:</label>
                 <input type="text" id="name" class="input" name="name" placeholder="name" v-model="nameData">
