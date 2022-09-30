@@ -1,0 +1,55 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+#app{
+    @apply mb-7
+}
+.container {
+    @apply ml-10 mt-10 mr-10 mb-10 italic flex flex-col-reverse	
+    lg:grid lg:grid-cols-2 lg:ml-48
+}
+
+.box {
+    @apply bg-yellow-200 border-4 border-amber-200/50 rounded-2xl mr-10 shadow-2xl 
+}
+
+.userList {
+    @apply min-w-full border-2 mt-2 mr-5 mb-6  text-xs gap-6 border-yellow-400  lg:border-yellow-300/50 rounded-xl relative duration-500 
+    grid grid-cols-1
+    lg:grid lg:grid-cols-3 
+}
+
+.userList:hover {
+    @apply shadow-yellow-50 lg:shadow-violet-200 border-violet-100 shadow-xl bg-yellow-100
+}
+
+
+
+.card-container{
+    @apply flex justify-around lg:mt-40
+}
+
+.btn{
+@apply bg-white hover:bg-gray-100 text-gray-800 font-semibold py-1 px-3 border border-gray-400 rounded shadow
+
+}
+
+.name {
+    @apply lg:text-left lg:m-3
+}
+.phone {
+    @apply lg:text-center lg:mt-3
+}
+.label{
+    @apply mr-4 items-start
+}
+.title{
+    @apply text-sm font-thin flex justify-between mb-5
+}
+
+.addUser {
+    @apply font-bold text-3xl  rounded-2xl shadow-2xl shadow-yellow-600 border-4 border-yellow-100 h-96 w-96 bg-yellow-200 flex justify-around items-center
+}
