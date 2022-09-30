@@ -1,10 +1,7 @@
 <template>
   <div class="container">
     <div class="box">
-      <h1 class="bg-amber-200 h-20 p-6 italic rounded-2xl shadow-xl shadow-yellow-400">COSTUMER LIST</h1>
-      <button>customer ADD</button>
-
-      <br />
+      <h1 class="bg-blue-200 h-20 p-6 italic rounded-xl shadow-xl shadow-blue-300">COSTUMER LIST</h1>
       <div class="grid grid-cols-3">
         <strong>NAME</strong>
         <strong>PHONE</strong>
@@ -71,6 +68,10 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: rgb(107, 102, 102)
+  color: rgb(107, 102, 102);
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 </style>
