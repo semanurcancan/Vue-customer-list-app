@@ -2,6 +2,7 @@
   <div class="container">
     <div class="box">
       <h1 class="bg-amber-200 h-20 p-6 italic rounded-2xl shadow-xl shadow-yellow-400">COSTUMER LIST</h1>
+      <button>customer ADD</button>
 
       <br />
       <div class="grid grid-cols-3">
