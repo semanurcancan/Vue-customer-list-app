@@ -1,8 +1,9 @@
 <template>
   <div class="container">
     <div class="box">
-      <h1 class="bg-blue-200 h-20 p-6 italic rounded-xl shadow-xl shadow-blue-300">USER LIST</h1>
-      <div class="grid grid-cols-3">
+      <h1 class="bg-blue-200 h-20 p-6 italic rounded-xl  shadow-xl shadow-blue-300">USER LIST</h1>
+      <br/>
+      <div class="grid grid-cols-3 text-blue-600/50">
         <strong>NAME</strong>
         <strong>PHONE</strong>
         <strong>E-MAIL</strong>
